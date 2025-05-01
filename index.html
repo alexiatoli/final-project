@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT Career Pathways</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+    <header class="text-center p-5">
+        <img src="assets/logo.png" alt="CIT Logo" class="mb-3">
+        <h1>Applied Computing: Career Pathways</h1>
+    </header>
+    
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3" id="software" onclick="showDetails('software')">
+                <img src="assets/quadrant-software.png" class="img-fluid" alt="Software Development">
+                <h3>Software Development</h3>
+            </div>
+            <div class="col-md-3" id="cybersecurity" onclick="showDetails('cybersecurity')">
+                <img src="assets/quadrant-cybersecurity.png" class="img-fluid" alt="Cybersecurity">
+                <h3>Cybersecurity</h3>
+            </div>
+            <div class="col-md-3" id="networking" onclick="showDetails('networking')">
+                <img src="assets/quadrant-networking.png" class="img-fluid" alt="Networking">
+                <h3>Networking</h3>
+            </div>
+            <div class="col-md-3" id="datamanagement" onclick="showDetails('datamanagement')">
+                <img src="assets/quadrant-data.png" class="img-fluid" alt="Data Management">
+                <h3>Data Management</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalBody"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
