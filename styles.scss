@@ -1,0 +1,38 @@
+// _variables.scss
+$purdue-gold: #e0a100;
+$purdue-black: #4e2a84;
+$purdue-white: #ffffff;
+
+// _main.scss
+@import 'variables';
+
+body {
+  background-color: $purdue-black;
+  color: $purdue-white;
+  font-family: Arial, sans-serif;
+}
+
+header h1 {
+  color: $purdue-gold;
+}
+
+h3 {
+  color: $purdue-gold;
+}
+
+.img-fluid {
+  border-radius: 10px;
+}
+
+.modal-content {
+  background-color: $purdue-black;
+  color: $purdue-white;
+}
+
+.modal-header, .modal-footer {
+  background-color: $purdue-gold;
+}
+
+#modalLabel {
+  color: $purdue-black;
+}
