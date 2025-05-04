@@ -1,38 +1,97 @@
-// _variables.scss
-$purdue-gold: #e0a100;
-$purdue-black: #4e2a84;
+// Purdue Brand Colors
+$purdue-gold: #c28e0e;
+$purdue-black: #000000;
+$purdue-gray: #f4f4f4;
 $purdue-white: #ffffff;
 
-// _main.scss
-@import 'variables';
-
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $purdue-gray;
+  margin: 0;
+}
+
+header {
   background-color: $purdue-black;
   color: $purdue-white;
-  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-header h1 {
-  color: $purdue-gold;
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
-h3 {
-  color: $purdue-gold;
+.quadrants {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  width: 100%;
 }
 
-.img-fluid {
-  border-radius: 10px;
-}
-
-.modal-content {
-  background-color: $purdue-black;
-  color: $purdue-white;
-}
-
-.modal-header, .modal-footer {
+.quadrant {
   background-color: $purdue-gold;
+  color: $purdue-black;
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid $purdue-black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
-#modalLabel {
-  color: $purdue-black;
+#applied-computing {
+  background-color: $purdue-white;
+  text-align: center;
+  padding: 2rem;
+  border-top: 4px solid $purdue-black;
+  border-bottom: 4px solid $purdue-black;
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: $purdue-black;
+    font-weight: bold;
+  }
 }
+
+.jobs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+
+  .job {
+    background-color: $purdue-gray;
+    color: $purdue-black;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+}
+
+footer {
+  background-color: $purdue-black;
+  color: $purdue-white;
+  text-align: center;
+  padding: 1.5rem;
+  font-weight: bold;
+}
+
+.modal-header {
+  background-color: $purdue-black;
+  color: $purdue-white;
+}
+
