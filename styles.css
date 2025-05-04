@@ -1,25 +1,98 @@
-@import 'variables';
- body {
-	 background-color: #4e2a84;
-	 color: #fff;
-	 font-family: Arial, sans-serif;
+:root {
+  --purdue-gold: #c28e0e;
+  --purdue-black: #000000;
+  --purdue-gray: #f4f4f4;
+  --purdue-white: #ffffff;
 }
- header h1 {
-	 color: #e0a100;
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--purdue-gray);
+  margin: 0;
 }
- h3 {
-	 color: #e0a100;
+
+header {
+  background-color: var(--purdue-black);
+  color: var(--purdue-white);
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 2rem;
+  font-weight: bold;
 }
- .img-fluid {
-	 border-radius: 10px;
+
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
- .modal-content {
-	 background-color: #4e2a84;
-	 color: #fff;
+
+.quadrants {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  width: 100%;
 }
- .modal-header, .modal-footer {
-	 background-color: #e0a100;
+
+.quadrant {
+  background-color: var(--purdue-gold);
+  color: var(--purdue-black);
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid var(--purdue-black);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 }
- #modalLabel {
-	 color: #4e2a84;
+
+.quadrant:hover {
+  transform: scale(1.05);
 }
+
+#applied-computing {
+  background-color: var(--purdue-white);
+  text-align: center;
+  padding: 2rem;
+  border-top: 4px solid var(--purdue-black);
+  border-bottom: 4px solid var(--purdue-black);
+}
+
+#applied-computing h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: var(--purdue-black);
+  font-weight: bold;
+}
+
+.jobs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.job {
+  background-color: var(--purdue-gray);
+  color: var(--purdue-black);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: var(--purdue-black);
+  color: var(--purdue-white);
+  text-align: center;
+  padding: 1.5rem;
+  font-weight: bold;
+}
+
+.modal-header {
+  background-color: var(--purdue-black);
+  color: var(--purdue-white);
+}
+
